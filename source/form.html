@@ -8,10 +8,10 @@
 
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
+        <a href="index.html" class="page-header__logo">
           <img src="img/logo-mobile.svg" width="33" height="37" alt="Функциональное питание для котов CAT ENERGY">
         </a>
-        <a class="page-header__logo-text">
+        <a href="index.html" class="page-header__logo-text">
           <img src="img/logo2.svg" width="101" height="18" alt="CAT ENERGY">
         </a>
         <nav class="main-nav">
@@ -19,13 +19,13 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active">
-                <a>Главная</a>
+                <a href="index.html">Главная</a>
               </li>
               <li class="site-list__item">
                 <a href="catalog.html">Каталог продукции</a>
               </li>
               <li class="site-list__item">
-                <a href="form.html">Подбор программы</a>
+                <a>Подбор программы</a>
               </li>
             </ul>
           </div>
@@ -43,15 +43,15 @@
           <form class="program-form__fields form-data" action="https://echo.htmlacademy.ru" method="POST">
             <div class="form-data__text">
               <label for="name">Имя:*</label>
-              <input type="text" id="name" name="name" value="БАРСИК" />
+              <input type="text" id="name" name="name" value="Барсик" required />
             </div>
             <div class="form-data__text">
               <label for="weight">Вес (кг):*</label>
-              <input type="text" id="weight" name="weight" value="7" />
+              <input type="number" id="weight" name="weight" value="7" required />
             </div>
             <div class="form-data__text">
               <label for="age">Возраст (лет):*</label>
-              <input type="text" id="age" name="age" value="7" />
+              <input type="number" id="age" name="age" value="7" required />
             </div>
 
             <div class="form-data__radio">
@@ -71,42 +71,42 @@
               <p class="form-data__contants-title">Контактные данные (владельца кота)</p>
               <div class="form-data__email form-data__email--img">
                 <label for="email">E-mail:*</label>
-                <input type="text" id="email" name="email" value="KUKLACHEV@GMAIL.COM" />
+                <input type="email" id="email" name="email" value="Kuklachev@gmail.com" required />
               </div>
               <div class="form-data__phone form-data__phone--img">
                 <label for="phone">Телефон:*</label>
-                <input type="text" id="phone" name="phone" value="8 (960) 900-60-90" />
+                <input type="tel" id="phone" name="phone" value="8 (960) 900-60-90" required />
               </div>
             </div>
 
             <div class="form-data__comment">
               <p class="form-data__comment-title">Комментарий</p>
-              <textarea class="form-data__comment-text" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота">Расскажите обо всех повадках кота</textarea>
+              <textarea class="form-data__comment-text" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
 
             <div class="form-data__additional">
               <p class="form-data__comment-additional">Дополнительно</p>
               <div class="form-data__checkbox">
-                <input type="checkbox" id="sweetener" name="program-additional" value="sweetener" checked />
+                <input type="checkbox" id="sweetener" name="sweetener" value="sweetener" checked />
                 <label for="sweetener">Сахарозаменитель</label>
               </div>
               <div class="form-data__checkbox">
-                <input type="checkbox" id="water" name="program-additional" value="water" />
+                <input type="checkbox" id="water" name="water" value="water" />
                 <label for="water">Питьевая вода</label>
               </div>
               <div class="form-data__checkbox">
-                <input type="checkbox" id="milk" name="program-additional" value="milk" />
+                <input type="checkbox" id="milk" name="milk" value="milk" />
                 <label for="milk">Молоко</label>
               </div>
               <div class="form-data__checkbox">
-                <input type="checkbox" id="vitamins" name="program-additional" value="vitamins" />
+                <input type="checkbox" id="vitamins" name="vitamins" value="vitamins" />
                 <label for="vitamins">Витамины</label>
               </div>
             </div>
 
             <input class="form-data__submit" type="submit" value="Отправить заявку" />
 
-            <p class="form-data__required-fields">* - Обязательные поля</p>
+            <p class="form-data__required-fields">* &mdash; Обязательные поля</p>
           </form>
         </div>
       </section>
@@ -128,7 +128,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo-text">
+        <a href="index.html" class="page-footer__logo-text">
           <img src="img/footer-logo2.svg" width="128" height="24" alt="CAT ENERGY">
         </a>
         <div class="page-footer__social social">
