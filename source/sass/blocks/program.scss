@@ -1,0 +1,120 @@
+.program {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.program__wrapper {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.program__promo {
+  min-height: 467px;
+  position: relative;
+  color: #ffffff;
+  background: $special_dark_grey url("../img/index-background-desktop2.svg") 0% 0% no-repeat;
+  background-size: 100%;
+  margin: 0;
+  padding: 0;
+  outline: 5px solid rgba(0, 255, 0, 0.8);;
+  outline-offset: -5px;
+}
+
+.program__background {
+  width: 100%;
+  height: 302px;
+  background-color: $light_green;
+}
+
+h1.program__title {
+  margin: 0;
+  padding: 27px 35px 0 36px;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 36px;
+  text-align: center;
+}
+
+.program__slogan {
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.program__img {
+  position: absolute;
+  top: 167px;
+  left: 20px;
+  right: 20px;
+}
+
+.program__choice {
+  padding: 7px 44px 7px 44px;
+  background-color: $basic_green;
+  text-align: center;
+}
+
+.program__link {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.program__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}
+
+.program__item {
+  margin-bottom: 20px;
+  padding: 30px 20px 18px 20px;
+  background-color: $basic_grey;
+}
+
+.program__item:last-child {
+  margin-bottom: 0;
+}
+
+h3.program__title {
+  margin: 0;
+  padding: 0;
+  padding-left: 91px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 37px;
+
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.program__description {
+  margin: 0;
+  padding: 29px 0 23px 0;
+  font-family: "Arial";
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  color: $special_dark_grey;
+
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.program__catalog {
+  display: flex;
+  padding-top: 15px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+}
+

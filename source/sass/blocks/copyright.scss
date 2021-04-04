@@ -1,0 +1,18 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: "Arial";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 18.4px;
+
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}
+
+.copyright__link {
+  color: $special_dark_grey;
+  text-decoration: none;
+}
