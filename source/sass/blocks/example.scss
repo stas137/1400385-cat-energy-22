@@ -1,6 +1,6 @@
 .example {
   background-color: $example_grey;
-  outline: 5px solid rgba(0, 255, 0, 0.8);;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
 }
 
@@ -22,7 +22,7 @@
   margin: 0;
   padding: 0;
   padding-top: 33px;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
@@ -58,7 +58,7 @@
 
 .example__addition {
   background-color: $example_grey;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 12px;

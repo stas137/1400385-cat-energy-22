@@ -9,14 +9,14 @@
 }
 
 .program__promo {
-  min-height: 467px;
+  margin: 0;
+  padding: 0;
   position: relative;
+  min-height: 467px;
   color: #ffffff;
   background: $special_dark_grey url("../img/index-background-desktop2.svg") 0% 0% no-repeat;
   background-size: 100%;
-  margin: 0;
-  padding: 0;
-  outline: 5px solid rgba(0, 255, 0, 0.8);;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
 }
 
@@ -99,7 +99,7 @@ h3.program__title {
 .program__description {
   margin: 0;
   padding: 29px 0 23px 0;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
@@ -117,4 +117,3 @@ h3.program__title {
   color: #000000;
   text-transform: uppercase;
 }
-
