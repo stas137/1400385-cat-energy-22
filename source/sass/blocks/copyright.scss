@@ -9,9 +9,10 @@
 
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
+}
 
-  &__link {
-    color: $special_dark_grey;
-    text-decoration: none;
-  }
+
+.copyright__link {
+  color: $special-dark-grey;
+  text-decoration: none;
 }

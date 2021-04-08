@@ -4,26 +4,26 @@
   text-align: left;
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
+}
 
-  &__wrapper {
-    margin: 0;
-    padding: 28px 20px 28px 20px;
-    display: flex;
-  }
+.collaboration__wrapper {
+  margin: 0;
+  padding: 28px 20px 28px 20px;
+  display: flex;
+}
 
-  &__title {
-    margin: 0;
-    padding: 0;
-    font-family: $caption-font;
-    font-size: 16px;
-    font-weight: normal;
-    text-transform: uppercase;
-  }
+.collaboration__title {
+  margin: 0;
+  padding: 0;
+  font-family: $caption-font;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
 
-  &__contacts {
-    margin: 0;
-    padding: 0;
-    margin-left: 2px;
-    line-height: 20px;
-  }
+.collaboration__contacts {
+  margin: 0;
+  padding: 0;
+  margin-left: 2px;
+  line-height: 20px;
 }

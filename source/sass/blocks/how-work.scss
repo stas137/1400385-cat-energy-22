@@ -1,47 +1,47 @@
 .how-work {
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
+}
 
-  &__wrapper {
-    margin: 0;
-    padding: 27px 20px 42px 20px;
-  }
+.how-work__wrapper {
+  margin: 0;
+  padding: 27px 20px 42px 20px;
+}
 
-  &__title {
-    margin: 0;
-    padding: 0;
-    font-family: $caption-font;
-    font-size: 36px;
-    font-weight: normal;
-    line-height: 40px;
-    color: #000000;
-  }
+.how-work__title {
+  margin: 0;
+  padding: 0;
+  font-family: $caption-font;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 40px;
+  color: #000000;
+}
 
-  &__list {
-    margin: 0;
-    padding: 38px 0 0 0;
-    list-style: none;
-  }
+.how-work__list {
+  margin: 0;
+  padding: 38px 0 0 0;
+  list-style: none;
+}
 
-  &__item {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 20px;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 18px;
-    color: $special-dark-grey;
-  }
+.how-work__item {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  color: $special-dark-grey;
 
-  &__item:last-child {
+  &:last-child {
     margin-bottom: 0;
   }
+}
 
-  &__text {
-    margin: 0;
-    padding: 0;
-    margin-left: 20px;
-  }
+.how-work__text {
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
 }
