@@ -1,11 +1,11 @@
 .example {
   background-color: $example-grey;
+  color: #000000;
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
 }
 
 .example__wrapper {
-  margin: 0;
   padding: 27px 20px 25px 20px;
 }
 
@@ -16,13 +16,13 @@
   font-size: 36px;
   font-weight: normal;
   line-height: 40px;
-  color: #000000;
 }
 
 .example__description {
   margin: 0;
   padding: 0;
   padding-top: 33px;
+  color: $special-dark-grey;
 }
 
 .example__list {
@@ -38,32 +38,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
-  &:first-child .example__text {
-    padding: 15px 42px 25px 42px;
+  &:first-child {
+    .example__text {
+      padding: 15px 42px 25px 42px;
+    }
+
+    .example__addition {
+      width: 80px;
+    }
   }
 
-  &:nth-child(2) .example__text {
-    padding: 15px 20px 25px 22px;
-  }
+  &:nth-child(2) {
+    .example__text {
+      padding: 15px 20px 25px 22px;
+    }
 
-  &:first-child .example__addition {
-    width: 80px;
-  }
-
-  &:nth-child(2) .example__addition {
-    width: 80px;
+    .example__addition {
+      width: 80px;
+    }
   }
 }
 
 .example__text {
   font-family: $caption-font;
   font-size: 24px;
-  font-weight: normal;
   line-height: 24px;
-  color: #000000;
   text-transform: uppercase;
-  text-align: center;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
 }
@@ -72,10 +74,7 @@
   margin-top: -35px;
   background-color: $example-grey;
   font-size: 12px;
-  font-weight: normal;
   line-height: 12px;
-  color: #000000;
-  text-align: center;
 }
 
 .example__spending {
@@ -83,11 +82,9 @@
   padding-top: 25px;
   font-family: $caption-font;
   font-size: 14px;
-  font-weight: normal;
   line-height: 20px;
-  color: #000000;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .example__explain {

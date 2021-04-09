@@ -1,13 +1,10 @@
 .collaboration {
-  font-weight: normal;
-  color: #000000;
   text-align: left;
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
 }
 
 .collaboration__wrapper {
-  margin: 0;
   padding: 28px 20px 28px 20px;
   display: flex;
 }
@@ -19,6 +16,7 @@
   font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .collaboration__contacts {
