@@ -1,0 +1,16 @@
+.slider {
+  text-align: center;
+  color: #000000;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}
+
+.slider__toggle {
+  border: none;
+  outline: none;
+  font-family: $caption-font;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  text-transform: uppercase;
+}

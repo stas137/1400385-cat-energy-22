@@ -1,0 +1,29 @@
+.page-header {
+  background-color: #ffffff;
+  color: #000000;
+
+  font-family: $caption-font;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -3px;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__container {
+  padding: 0 20px;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}

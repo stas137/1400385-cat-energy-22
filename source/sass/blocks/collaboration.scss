@@ -1,0 +1,27 @@
+.collaboration {
+  text-align: left;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}
+
+.collaboration__wrapper {
+  padding: 28px 20px 28px 20px;
+  display: flex;
+}
+
+.collaboration__title {
+  margin: 0;
+  padding: 0;
+  font-family: $caption-font;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.collaboration__contacts {
+  margin: 0;
+  padding: 0;
+  margin-left: 2px;
+  line-height: 20px;
+}

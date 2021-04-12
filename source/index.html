@@ -2,18 +2,22 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
 
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img src="img/logo-mobile.svg" width="33" height="37" alt="Функциональное питание для котов CAT ENERGY">
-        </a>
-        <a class="page-header__logo-text">
-          <img src="img/logo2.svg" width="101" height="18" alt="CAT ENERGY">
-        </a>
+        <div class="page-header__container">
+          <a class="page-header__logo">
+            <img src="img/logo-mobile.svg" width="33" height="37" alt="Функциональное питание для котов CAT ENERGY">
+          </a>
+          <a class="page-header__logo-text">
+            <img src="img/logo2.svg" width="101" height="18" alt="CAT ENERGY">
+          </a>
+        </div>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
@@ -35,18 +39,18 @@
 
     <main class="page-main">
       <section class="program">
+        <div class="program__promo">
+          <div class="program__background">
+            <h1 class="program__caption">Функциональное питание для котов</h1>
+            <p class="program__slogan">Занялся собой? Займись котом!</p>
+          </div>
+          <div class="program__img">
+            <img src="img/index-can-mobile1.svg" width="280" height="270" alt="CAT ENEGRY Курица">
+          </div>
+        </div>
         <div class="program__wrapper">
-          <div class="program__promo">
-            <h1 class="program__title">Функциональное питание для котов</h1>
-            <p class="program__slogan">
-              Занялся собой? Займись котом!
-            </p>
-            <div class="program__img">
-              <img src="img/index-can-mobile1.svg" width="280" height="270" alt="CAT ENEGRY Курица">
-            </div>
-            <div class="program__choice">
-              <a class="program__link" href="form.html">Подобрать программу</a>
-            </div>
+          <div class="program__choice">
+            <a class="program__link" href="form.html">Подобрать программу</a>
           </div>
           <ul class="program__list">
             <li class="program__item program__item--slim">
@@ -135,20 +139,20 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a href="https://vk.com/htmlacademy" class="social__link social__link--vkontakte">Мы в Вконтакте</a>
+              <a href="https://vk.com/htmlacademy" class="social__link social__link--vkontakte" title="Мы в Вконтакте"></a>
             </li>
             <li class="social__item">
-              <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook">Мы в Фейсбуке</a>
+              <a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram" title="Мы в Инстаграме"></a>
             </li>
             <li class="social__item">
-              <a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram">Мы в Инстаграме</a>
+              <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook" title="Мы в Фейсбуке"></a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           <a class="copyright__img" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/logo_html1.svg" width="37" height="24" alt="Логотип HTML Academy">
+            <img src="img/logo_html1.svg" width="27" height="34" alt="Логотип HTML Academy">
           </a>
         </div>
       </div>

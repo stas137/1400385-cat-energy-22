@@ -1,0 +1,29 @@
+.page-footer {
+  background-color: $basic-grey;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -3px;
+}
+
+.page-footer__wrapper {
+  padding: 39px 20px 22px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-footer__logo-text {
+  padding-bottom: 32px;
+  text-align: center;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}
+
+.page-footer__social {
+  padding: 20px 0;
+  border-top: 1px solid $page-footer-grey;
+  border-bottom: 1px solid $page-footer-grey;
+}
+
+.page-footer__copyright {
+  padding-top: 22px;
+}

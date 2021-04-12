@@ -1,0 +1,93 @@
+.example {
+  background-color: $example-grey;
+  color: #000000;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}
+
+.example__wrapper {
+  padding: 27px 20px 25px 20px;
+}
+
+.example__title {
+  margin: 0;
+  padding: 0;
+  font-family: $caption-font;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 40px;
+}
+
+.example__description {
+  margin: 0;
+  padding: 0;
+  padding-top: 33px;
+  color: $special-dark-grey;
+}
+
+.example__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &:first-child {
+    .example__text {
+      padding: 15px 42px 25px 42px;
+    }
+
+    .example__addition {
+      width: 80px;
+    }
+  }
+
+  &:nth-child(2) {
+    .example__text {
+      padding: 15px 20px 25px 22px;
+    }
+
+    .example__addition {
+      width: 80px;
+    }
+  }
+}
+
+.example__text {
+  font-family: $caption-font;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.example__addition {
+  margin-top: -35px;
+  background-color: $example-grey;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__spending {
+  margin: 0;
+  padding-top: 25px;
+  font-family: $caption-font;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.example__explain {
+  margin: 0;
+  padding: 0;
+  padding-top: 42px;
+}
