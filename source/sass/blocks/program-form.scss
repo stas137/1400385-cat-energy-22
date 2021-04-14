@@ -1,0 +1,36 @@
+.program-form {
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}
+
+.program-form__wrapper {
+  padding: 27px 0 32px 0;
+}
+
+.program-form__promo {
+  padding: 0 20px;
+  font-family: $caption-font;
+  color: #000000;
+}
+
+.program-form__title {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 36px;
+}
+
+.program-form__subtitle {
+  margin: 0;
+  padding: 0;
+  margin-top: 37px;
+  width: 226px;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.program-form__fields {
+  padding-top: 39px;
+}
