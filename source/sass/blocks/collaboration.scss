@@ -1,11 +1,12 @@
 .collaboration {
-  background-color: #ffffff;
   text-align: left;
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
 }
 
 .collaboration__wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
   padding: 28px 20px 28px 20px;
   display: flex;
 }

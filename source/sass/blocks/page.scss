@@ -1,9 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+*::before {
+  box-sizing: border-box;
+}
+
+*::after {
+  box-sizing: border-box;
+}
+
 .page {
   height: 100%;
 }
 
 .page__body {
-  width: $mobile-width;
+  min-width: $mobile-width;
   min-height: 100%;
   margin: 0 auto;
   font-family: $basic-font;

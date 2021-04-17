@@ -1,16 +1,20 @@
 .form-data {
   font-family: $caption-font;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
   text-transform: uppercase;
 }
 
-.form-data__input {
-  box-sizing: border-box;
+.form-data__field {
   padding: 13px 15px 13px 15px;
   font-family: $caption-font;
   font-size: 16px;
   font-weight: normal;
-  line-height: 18px;
   text-transform: uppercase;
+
+  margin-left: 13px;
+  width: 100%;
 }
 
 .form-data__text {
@@ -22,25 +26,11 @@
 
   &:first-child {
     margin-top: 0;
-
-    input {
-      width: 228px;
-    }
-  }
-
-  &:nth-child(2) {
-    input {
-      width: 191px;
-    }
   }
 
   &:nth-child(3) {
     padding-bottom: 27px;
     border-bottom: 1px solid $page-header-grey;
-
-    input {
-      width: 172px;
-    }
   }
 }
 
@@ -79,8 +69,8 @@
   justify-content: space-between;
   align-items: center;
 
-  input {
-    width: 219px;
+  .form-data__label {
+    min-width: 50px;
   }
 }
 
@@ -89,10 +79,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  input {
-    width: 204px;
-  }
 }
 
 .form-data__comment {
@@ -140,8 +126,6 @@
 
 .form-data__checkbox {
   margin-top: 13px;
-  font-size: 16px;
-  font-weight: normal;
   line-height: 18px;
   color: #000000;
 }

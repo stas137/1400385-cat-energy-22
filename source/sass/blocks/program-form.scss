@@ -1,10 +1,11 @@
 .program-form {
-  background-color: #ffffff;
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
 }
 
 .program-form__wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
   padding: 27px 0 32px 0;
 }
 
