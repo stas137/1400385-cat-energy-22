@@ -68,10 +68,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
-  &-label {
-    min-width: 50px;
-  }
+.form-data__email-label {
+  min-width: 50px;
 }
 
 .form-data__phone {

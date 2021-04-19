@@ -6,6 +6,7 @@
 .good-item__link {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
   align-items: center;
   text-decoration: none;
 }
@@ -14,12 +15,13 @@
   margin: 0;
   padding: 0;
   width: 76px;
-  font-family: $caption-font;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 20px;
   color: $special-dark-grey2;
-  text-transform: uppercase;
+
+  @include font16-lineheight20($caption-font);
+}
+
+.good-item__info {
+  justify-self: stretch;
 }
 
 .good-item__table-info {
@@ -44,12 +46,9 @@
   margin-top: 22px;
   padding: 10px 0;
   background-color: $basic-green;
-  font-family: $caption-font;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 20px;
   color: #ffffff;
-  text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+
+  @include font16-lineheight20($caption-font);
 }

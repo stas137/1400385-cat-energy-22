@@ -1,3 +1,20 @@
+@mixin alignment($width) {
+  width: $width;
+  margin: 0 auto;
+}
+
+@mixin font16-lineheight20($font) {
+  font-family: $font;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 img {
   max-width: 100%;
   height: auto;
