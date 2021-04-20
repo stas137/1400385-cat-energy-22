@@ -12,12 +12,11 @@
 }
 
 .good-item__name {
+  @include title(16px);
   margin: 0;
   padding: 0;
   width: 76px;
-  color: $special-dark-grey2;
-
-  @include font16-lineheight20($caption-font);
+  color: #222222;
 }
 
 .good-item__info {
@@ -42,6 +41,7 @@
 }
 
 .good-item__order {
+  @include title(16px);
   display: block;
   margin-top: 22px;
   padding: 10px 0;
@@ -49,6 +49,4 @@
   color: #ffffff;
   text-decoration: none;
   text-align: center;
-
-  @include font16-lineheight20($caption-font);
 }

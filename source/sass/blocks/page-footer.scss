@@ -5,7 +5,7 @@
 }
 
 .page-footer__wrapper {
-  @include alignment($mobile-width);
+  @include alignment();
   padding: 39px 20px 22px 20px;
   display: flex;
   flex-direction: column;

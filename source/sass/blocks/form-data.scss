@@ -12,14 +12,12 @@
   font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
-
   margin-left: 13px;
   width: 100%;
 }
 
 .form-data__text {
   margin-top: 13px;
-  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,26 +28,25 @@
 
   &:nth-child(3) {
     padding-bottom: 27px;
-    border-bottom: 1px solid $page-header-grey;
   }
 }
 
+.form-data__radio-group {
+  padding: 22px 0 20px 0;
+  border-top: 1px solid $page-header-grey;
+  border-bottom: 1px solid $page-header-grey;
+}
+
 .form-data__radio {
-  padding: 0 20px;
   margin-top: 13px;
 
-  &:nth-child(4) {
-    margin-top: 22px;
-  }
-
-  &:nth-child(6) {
-    padding-bottom: 20px;
-    border-bottom: 1px solid $page-header-grey;
+  &:first-child {
+    margin-top: 0;
   }
 }
 
 .form-data__contacts {
-  padding: 26px 20px 0 20px;
+  padding-top: 26px;
 }
 
 .form-data__contacts-title {
@@ -82,7 +79,7 @@
 }
 
 .form-data__comment {
-  padding: 24px 20px 0 20px;
+  padding-top: 24px;
 }
 
 .form-data__comment-title {
@@ -109,7 +106,7 @@
 }
 
 .form-data__additional {
-  padding: 24px 20px 34px 20px;
+  padding: 24px 0 34px 0;
 }
 
 .form-data__comment-additional {
@@ -131,6 +128,7 @@
 }
 
 .form-data__wrapper {
+  @include alignment();
   padding: 0 20px;
 }
 
@@ -149,6 +147,7 @@
 }
 
 .form-data__required-fields {
+  margin-bottom: 32px;
   margin-top: 21px;
   font-family: $basic-font;
   color: #000000;

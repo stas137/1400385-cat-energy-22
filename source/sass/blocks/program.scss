@@ -7,7 +7,7 @@
 }
 
 .program__promo {
-  @include alignment($mobile-width);
+  @include alignment();
   min-height: 467px;
   font-family: $caption-font;
   color: #ffffff;
@@ -18,7 +18,7 @@
 }
 
 .program__wrapper {
-  @include alignment($mobile-width);
+  @include alignment();
   padding: 0 20px;
 }
 

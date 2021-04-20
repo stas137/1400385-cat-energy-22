@@ -4,8 +4,8 @@
 }
 
 .program-form__wrapper {
-  @include alignment($mobile-width);
-  padding: 27px 0 32px 0;
+  @include alignment();
+  padding: 27px 0 0 0;
 }
 
 .program-form__promo {

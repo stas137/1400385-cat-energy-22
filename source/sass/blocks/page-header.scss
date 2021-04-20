@@ -12,7 +12,7 @@
 }
 
 .page-header__wrapper {
-  @include alignment($mobile-width);
+  @include alignment();
   display: flex;
   flex-direction: column;
 }

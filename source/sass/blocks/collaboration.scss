@@ -5,7 +5,7 @@
 }
 
 .collaboration__wrapper {
-  @include alignment($mobile-width);
+  @include alignment();
   padding: 28px 20px 28px 20px;
   display: flex;
 }

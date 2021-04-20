@@ -6,7 +6,7 @@
 }
 
 .example__wrapper {
-  @include alignment($mobile-width);
+  @include alignment();
   padding: 27px 20px 25px 20px;
 }
 
