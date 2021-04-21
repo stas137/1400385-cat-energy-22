@@ -1,0 +1,30 @@
+.additional-good__name {
+  margin: 0;
+  padding: 0;
+  padding-top: 13px;
+  font-family: $caption-font;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.additional-good__info {
+  padding-top: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 20px;
+}
+
+.additional-good__order {
+  @include title(16px);
+  display: block;
+  margin-top: 13px;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: $basic-green;
+}

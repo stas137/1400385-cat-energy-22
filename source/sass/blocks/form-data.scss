@@ -6,6 +6,11 @@
   text-transform: uppercase;
 }
 
+.form-data__wrapper {
+  @include alignment();
+  padding: 0 20px;
+}
+
 .form-data__field {
   padding: 13px 15px 13px 15px;
   font-family: $caption-font;
@@ -125,11 +130,6 @@
   margin-top: 13px;
   line-height: 18px;
   color: #000000;
-}
-
-.form-data__wrapper {
-  @include alignment();
-  padding: 0 20px;
 }
 
 .form-data__submit {
