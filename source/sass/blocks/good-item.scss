@@ -1,0 +1,52 @@
+.good-item {
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}
+
+.good-item__link {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.good-item__name {
+  @include title(16px);
+  margin: 0;
+  padding: 0;
+  width: 76px;
+  color: #222222;
+}
+
+.good-item__info {
+  justify-self: stretch;
+}
+
+.good-item__table-info {
+  margin-top: 18px;
+  font-size: 12px;
+  color: $special-dark-grey;
+  text-decoration: none;
+}
+
+.good-item__name-value {
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.good-item__order {
+  @include title(16px);
+  display: block;
+  margin-top: 22px;
+  padding: 10px 0;
+  background-color: $basic-green;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}

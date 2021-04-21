@@ -1,0 +1,156 @@
+.form-data {
+  font-family: $caption-font;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.form-data__field {
+  padding: 13px 15px 13px 15px;
+  font-family: $caption-font;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-left: 13px;
+  width: 100%;
+}
+
+.form-data__text {
+  margin-top: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:nth-child(3) {
+    padding-bottom: 27px;
+  }
+}
+
+.form-data__radio-group {
+  padding: 22px 0 20px 0;
+  border-top: 1px solid $page-header-grey;
+  border-bottom: 1px solid $page-header-grey;
+}
+
+.form-data__radio {
+  margin-top: 13px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.form-data__contacts {
+  padding-top: 26px;
+}
+
+.form-data__contacts-title {
+  margin: 0;
+  padding: 0;
+  width: 187px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 26px;
+  color: #000000;
+  text-transform: initial;
+}
+
+.form-data__email {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-data__email-label {
+  min-width: 50px;
+}
+
+.form-data__phone {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-data__comment {
+  padding-top: 24px;
+}
+
+.form-data__comment-title {
+  margin: 0;
+  padding: 0;
+  width: 187px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 26px;
+  color: #000000;
+  text-transform: initial;
+}
+
+.form-data__comment-text {
+  box-sizing: border-box;
+  width: 100%;
+  height: 150px;
+  margin-top: 36px;
+  font-family: $caption-font;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form-data__additional {
+  padding: 24px 0 34px 0;
+}
+
+.form-data__comment-additional {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 34px;
+  width: 187px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 26px;
+  color: #000000;
+  text-transform: initial;
+}
+
+.form-data__checkbox {
+  margin-top: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.form-data__wrapper {
+  @include alignment();
+  padding: 0 20px;
+}
+
+.form-data__submit {
+  width: 280px;
+  height: 44px;
+  color: #ffffff;
+  background-color: $basic-green;
+  font-family: $caption-font;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+}
+
+.form-data__required-fields {
+  margin-bottom: 32px;
+  margin-top: 21px;
+  font-family: $basic-font;
+  color: #000000;
+  text-align: center;
+  text-transform: initial;
+}

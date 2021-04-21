@@ -1,0 +1,12 @@
+@mixin alignment() {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+@mixin title($font-size) {
+  font-family: $caption-font;
+  font-size: $font-size;
+  font-weight: normal;
+  line-height: 20px;
+  text-transform: uppercase;
+}

@@ -4,6 +4,7 @@
 }
 
 .how-work__wrapper {
+  @include alignment();
   padding: 27px 20px 42px 20px;
 }
 

@@ -1,5 +1,4 @@
 .page-header {
-  background-color: #ffffff;
   color: #000000;
 
   font-family: $caption-font;
@@ -13,6 +12,7 @@
 }
 
 .page-header__wrapper {
+  @include alignment();
   display: flex;
   flex-direction: column;
 }
