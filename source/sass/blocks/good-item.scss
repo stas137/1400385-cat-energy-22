@@ -24,6 +24,8 @@
 }
 
 .good-item__table-info {
+  margin: 0;
+  padding: 0;
   margin-top: 18px;
   font-size: 12px;
   color: $special-dark-grey;
@@ -42,11 +44,5 @@
 
 .good-item__order {
   @include title(16px);
-  display: block;
-  margin-top: 22px;
-  padding: 10px 0;
-  background-color: $basic-green;
-  color: #ffffff;
-  text-decoration: none;
-  text-align: center;
+  @include button-order();
 }
