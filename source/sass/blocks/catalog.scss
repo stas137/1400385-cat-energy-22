@@ -13,6 +13,10 @@
   border-top: 1px solid $page-header-grey;
 }
 
+.catalog__good {
+  list-style: none;
+}
+
 .catalog__title {
   @include title(36px);
   margin: 0;

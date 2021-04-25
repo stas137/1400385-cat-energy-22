@@ -26,8 +26,7 @@
 }
 
 .good-more__show {
-  @include title(16px);
-  @include button-order();
+  @include button();
   background-color: $basic-grey;
   color: $special-dark-grey;
 }
