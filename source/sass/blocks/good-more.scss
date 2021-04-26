@@ -1,11 +1,17 @@
 .good-more {
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
+  border-top: 1px solid $special-grey;
+  border-bottom: 1px solid $special-grey;
+}
+
+.good-more__wrapper {
+  @include alignment();
+  padding: 25px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid $special-grey;
 }
 
 .good-more__title {
