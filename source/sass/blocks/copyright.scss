@@ -12,4 +12,8 @@
 .copyright__link {
   color: $special-dark-grey;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 22px;
+  }
 }

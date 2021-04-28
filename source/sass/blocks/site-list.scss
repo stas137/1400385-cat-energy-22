@@ -4,6 +4,11 @@
   justify-content: center;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .site-list__item {
@@ -19,5 +24,17 @@
   a {
     text-decoration: none;
     color: #000000;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

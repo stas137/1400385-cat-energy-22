@@ -5,12 +5,23 @@
   outline-offset: -5px;
 }
 
+.slider__toggles {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 570px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .slider__toggle {
+  @include title(16px);
   border: none;
   outline: none;
-  font-family: $caption-font;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 20px;
-  text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
