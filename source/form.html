@@ -101,36 +101,37 @@
             <div class="form-data__wrapper">
               <div class="form-data__additional">
                 <p class="form-data__comment-additional">Дополнительно</p>
-                <div class="form-data__checkbox">
-                  <input type="checkbox" id="sweetener" name="sweetener" value="sweetener" checked />
-                  <label class="form-data__label" for="sweetener">Сахарозаменитель</label>
-                </div>
-                <div class="form-data__checkbox">
-                  <input type="checkbox" id="water" name="water" value="water" />
-                  <label class="form-data__label" for="water">Питьевая вода</label>
-                </div>
-                <div class="form-data__checkbox">
-                  <input type="checkbox" id="milk" name="milk" value="milk" />
-                  <label class="form-data__label" for="milk">Молоко</label>
-                </div>
-                <div class="form-data__checkbox">
-                  <input type="checkbox" id="vitamins" name="vitamins" value="vitamins" />
-                  <label class="form-data__label" for="vitamins">Витамины</label>
+                <div class="form-data__group">
+                  <div class="form-data__checkbox">
+                    <input type="checkbox" id="sweetener" name="sweetener" value="sweetener" checked />
+                    <label class="form-data__label" for="sweetener">Сахарозаменитель</label>
+                  </div>
+                  <div class="form-data__checkbox">
+                    <input type="checkbox" id="water" name="water" value="water" />
+                    <label class="form-data__label" for="water">Питьевая вода</label>
+                  </div>
+                  <div class="form-data__checkbox">
+                    <input type="checkbox" id="milk" name="milk" value="milk" />
+                    <label class="form-data__label" for="milk">Молоко</label>
+                  </div>
+                  <div class="form-data__checkbox">
+                    <input type="checkbox" id="vitamins" name="vitamins" value="vitamins" />
+                    <label class="form-data__label" for="vitamins">Витамины</label>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="form-data__wrapper">
+            <div class="form-data__wrapper form-data__wrapper--flex">
               <input class="form-data__submit" type="submit" value="Отправить заявку" />
+              <p class="form-data__required-fields">* &mdash; Обязательные поля</p>
             </div>
-
-            <p class="form-data__required-fields">* &mdash; Обязательные поля</p>
           </form>
 
       </section>
 
       <section class="collaboration">
-        <div class="collaboration__wrapper">
+        <div class="collaboration__wrapper collaboration__wrapper--form">
           <h2 class="collaboration__title">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="collaboration__contacts">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
@@ -139,7 +140,11 @@
       <section class="map">
         <div class="map__wrapper">
           <h2 class="visually-hidden">Карта</h2>
-          <img class="map__img" src="img/rectangle.svg" alt="Карта">
+          <img class="map__img" src="img/map.svg" alt="Карта">
+          <div class="map__collaboration collaboration__wrapper">
+            <h2 class="collaboration__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <p class="collaboration__contacts">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
         </div>
       </section>
     </main>

@@ -29,6 +29,12 @@
   }
 }
 
+.collaboration__wrapper--form {
+  @media (min-width: $tablet-width) {
+    background-color: $basic-grey;
+  }
+}
+
 .collaboration__title {
   margin: 0;
   padding: 0;
