@@ -1,0 +1,38 @@
+.good-more {
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+  border-top: 1px solid $special-grey;
+  border-bottom: 1px solid $special-grey;
+}
+
+.good-more__wrapper {
+  @include alignment();
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.good-more__title {
+  @include title(16px);
+  margin: 0;
+  padding: 0;
+  padding-top: 23px;
+  color: #111111;
+}
+
+.good-more__subtitle {
+  margin: 0;
+  padding: 0;
+  padding-top: 8px;
+  font-size: 12px;
+  font-weight: normal;
+  color: $special-dark-grey;
+}
+
+.good-more__show {
+  @include button();
+  background-color: $basic-grey;
+  color: $special-dark-grey;
+}
