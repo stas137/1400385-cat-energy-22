@@ -9,16 +9,28 @@
 .form-data__wrapper {
   @include alignment();
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 0 30px 0 70px;
+  }
 }
 
 .form-data__field {
+  margin-left: 13px;
   padding: 13px 15px 13px 15px;
   font-family: $caption-font;
   font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
-  margin-left: 13px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 18px;
+    padding: 10px 21px 10px 21px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-data__text {
@@ -33,6 +45,13 @@
 
   &:nth-child(3) {
     padding-bottom: 27px;
+  }
+}
+
+.form-data__label {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -52,6 +71,10 @@
 
 .form-data__contacts {
   padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 71px;
+  }
 }
 
 .form-data__contacts-title {
@@ -63,6 +86,12 @@
   line-height: 26px;
   color: #000000;
   text-transform: initial;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    width: auto;
+  }
 }
 
 .form-data__email {
@@ -74,6 +103,12 @@
 
 .form-data__email-label {
   min-width: 50px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    min-width: 63px;
+  }
 }
 
 .form-data__phone {
@@ -96,18 +131,25 @@
   line-height: 26px;
   color: #000000;
   text-transform: initial;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form-data__comment-text {
+  @include title(16px);
   box-sizing: border-box;
   width: 100%;
   height: 150px;
   margin-top: 36px;
-  font-family: $caption-font;
-  font-size: 16px;
-  font-weight: normal;
   line-height: 18px;
-  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-data__additional {
@@ -124,6 +166,11 @@
   line-height: 26px;
   color: #000000;
   text-transform: initial;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form-data__checkbox {
@@ -133,6 +180,8 @@
 }
 
 .form-data__submit {
+  margin: 0;
+  padding: 0;
   width: 280px;
   height: 44px;
   color: #ffffff;
@@ -140,10 +189,15 @@
   font-family: $caption-font;
   font-size: 16px;
   font-weight: normal;
-  line-height: 20px;
+  line-height: 0;
   text-transform: uppercase;
   border: none;
   outline: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    height: 52px;
+  }
 }
 
 .form-data__required-fields {
