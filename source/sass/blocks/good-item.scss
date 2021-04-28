@@ -1,13 +1,22 @@
 .good-item {
+  border-top: 1px solid $page-header-grey;
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
 }
 
-.good-item__link {
+.good-item__wrapper {
+  @include alignment();
+  padding: 19px 20px 25px 20px;
+}
+
+.good-item__table {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
+}
+
+.good-item__link {
   text-decoration: none;
 }
 
@@ -24,7 +33,6 @@
 }
 
 .good-item__table-info {
-  margin: 0;
   padding: 0;
   margin-top: 18px;
   font-size: 12px;
@@ -43,6 +51,5 @@
 }
 
 .good-item__order {
-  @include title(16px);
-  @include button-order();
+  @include button();
 }

@@ -2,7 +2,6 @@
   @include title(16px);
   margin: 0;
   padding: 0;
-  padding-top: 13px;
   line-height: 18px;
   color: #222222;
 }
@@ -17,12 +16,6 @@
 }
 
 .additional-good__order {
-  @include title(16px);
-  display: block;
-  margin-top: 13px;
-  padding: 10px 0;
-  text-align: center;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: $basic-green;
+  @include button();
+  margin-top: 15px;
 }

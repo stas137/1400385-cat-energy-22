@@ -4,19 +4,22 @@
 }
 
 .catalog__wrapper {
-  @include alignment();
-  padding: 0 20px;
+  margin: 0;
+  padding: 0;
 }
 
-.catalog__goods {
-  padding: 19px 0 25px 0;
-  border-top: 1px solid $page-header-grey;
+.catalog__good {
+  list-style: none;
+}
+
+.catalog__promo {
+  @include alignment();
+  padding: 27px 20px 39px 20px;
 }
 
 .catalog__title {
   @include title(36px);
   margin: 0;
-  padding: 27px 0 39px 0;
   line-height: 36px;
   text-transform: initial;
   color: #000000;
@@ -28,8 +31,14 @@
   outline-offset: -5px;
 }
 
+.catalog__additional-wrapper {
+  @include alignment();
+  padding: 0 20px;
+}
+
 .catalog__additional-good {
   padding: 13px 0 19px 0;
+  list-style: none;
   border-top: 1px solid $special-grey;
 
   &:last-child {
@@ -38,7 +47,7 @@
 }
 
 .catalog__subpromo {
-  padding-top: 6px;
+  padding-top: 25px;
   padding-bottom: 36px;
 }
 

@@ -11,7 +11,8 @@
   text-transform: uppercase;
 }
 
-@mixin button-order() {
+@mixin button() {
+  @include title(16px);
   display: block;
   width: 100%;
   margin-top: 22px;
