@@ -46,19 +46,18 @@
                   <h1 class="program__caption">Функциональное питание для котов</h1>
                   <p class="program__slogan">Занялся собой? Займись котом!</p>
                 </div>
-                <div class="program__choice program__choice--top">
-                  <a class="program__link" href="form.html">Подобрать программу</a>
-                </div>
               </div>
               <div class="program__img">
                 <img src="img/index-can-mobile1.svg" width="280" height="270" alt="CAT ENEGRY Курица">
               </div>
+              <div class="program__link-wrapper">
+                <a class="program__link" href="form.html">
+                  <p class="program__choice">Подобрать программу</p>
+                </a>
+              </div>
             </div>
           </div>
           <div class="program__wrapper">
-            <div class="program__choice program__choice--bottom">
-              <a class="program__link" href="form.html">Подобрать программу</a>
-            </div>
             <ul class="program__list">
               <li class="program__item program__item--slim">
                 <div class="program__item-card">
@@ -128,11 +127,11 @@
                       <p class="example__addition">затрачено времени</p>
                     </li>
                   </ul>
-                  <p class="example__spending">Затраты на питание: 15 000 РУБ.</p>
+                  <p class="example__spending">Затраты на питание: <span class="example__text-padding">15 000</span> <span class="example__text-upper">руб.</span></p>
                 </div>
               </div>
               <div class="example__explain slider">
-                <img class="example__foto" src="img/before-now.svg" alt="Было Стало">
+                <img class="slider__foto" src="img/before-now.svg" alt="Было Стало">
                 <div class="slider__toggles">
                   <button class="slider__toggle" type="button">Было</button>
                   <div class="example__set"></div>
@@ -144,23 +143,21 @@
         </div>
       </section>
 
-      <section class="collaboration">
-        <div class="collaboration__wrapper">
-          <h2 class="collaboration__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <p class="collaboration__contacts">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        </div>
-      </section>
-
-      <section class="map">
-        <div class="map__wrapper">
-          <h2 class="visually-hidden">Карта</h2>
-          <img class="map__img" src="img/map.svg" alt="Карта">
-          <div class="map__collaboration collaboration__wrapper">
+      <div class="contacts">
+        <section class="collaboration">
+          <div class="collaboration__wrapper">
             <h2 class="collaboration__title">Приглашаем к сотрудничеству дилеров!</h2>
-            <p class="collaboration__contacts">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <p class="collaboration__contacts">ул. Большая Конюшенная, д. 19/8 <span class="collaboration__padding">Санкт-Петербург</span></p>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <section class="map">
+          <div class="map__wrapper">
+            <h2 class="visually-hidden">Карта</h2>
+            <img class="map__img" src="img/map.svg" alt="Карта">
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="page-footer">

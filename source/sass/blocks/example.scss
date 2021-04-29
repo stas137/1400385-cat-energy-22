@@ -16,7 +16,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 43px 30px 33px 30px;
-    width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,7 +39,6 @@
 
   @media (min-width: $desktop-width) {
     @include alignment();
-    width: $desktop-width;
     padding: 69px 110px 76px 110px;
   }
 }
@@ -54,7 +52,6 @@
 .example__card-wrapper {
   @media (min-width: $desktop-width) {
     @include alignment();
-    width: $desktop-width;
     padding: 70px 110px 75px 110px;
     display: flex;
     justify-content: space-between;
@@ -95,7 +92,6 @@
     display: block;
   }
 }
-
 
 .example__list {
   margin: 0;
@@ -192,6 +188,16 @@
   }
 }
 
+.example__text-upper {
+  text-transform: uppercase;
+}
+
+.example__text-padding {
+  @media (min-width: $desktop-width) {
+    padding-left: 63px;
+  }
+}
+
 .example__explain {
   margin: 0;
   padding: 0;
@@ -204,12 +210,5 @@
   @media (min-width: $desktop-width) {
     padding-top: 0;
     width: 690px;
-  }
-}
-
-.example__foto {
-  @media (min-width: $desktop-width) {
-    margin-top: -235px;
-    height: 530px;
   }
 }
