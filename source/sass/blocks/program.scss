@@ -125,6 +125,7 @@
 }
 
 .program__img {
+  position: relative;
   margin-top: -140px;
   display: flex;
   justify-content: center;
@@ -138,8 +139,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -330px;
-    margin-left: 450px;
+    margin-top: -515px;
+    margin-left: 250px;
     padding-bottom: 54px;
 
     img {
