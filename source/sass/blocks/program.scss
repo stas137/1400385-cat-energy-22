@@ -22,6 +22,29 @@
   @media (min-width: $tablet-width) {
     order: 2;
   }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 50%;
+      height: 696px;
+      background: $special-dark-grey url("../img/background-desktop.svg") 50% 50% no-repeat;
+      background-size: cover;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 50%;
+      height: 696px;
+      background-color: $light-green;
+    }
+  }
 }
 
 .program__promo-link {
@@ -125,7 +148,6 @@
 }
 
 .program__img {
-  position: relative;
   margin-top: -140px;
   display: flex;
   justify-content: center;
@@ -139,6 +161,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
+    z-index: 999;
     margin-top: -515px;
     margin-left: 250px;
     padding-bottom: 54px;
@@ -183,6 +207,10 @@
     position: relative;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
   }
 }
 

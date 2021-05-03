@@ -27,12 +27,6 @@
   }
 }
 
-.collaboration__wrapper--form {
-  @media (min-width: $tablet-width) {
-    background-color: $basic-grey;
-  }
-}
-
 .collaboration__title {
   margin: 0;
   padding: 0;
@@ -78,7 +72,7 @@
   }
 }
 
-.collaboration__padding {
+.collaboration__gap {
   @media (min-width: $desktop-width) {
     display: inline-block;
     padding-top: 19px;
