@@ -4,5 +4,9 @@
 }
 
 .map__wrapper {
-  @include alignment();
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
