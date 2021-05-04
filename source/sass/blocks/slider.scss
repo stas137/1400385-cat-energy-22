@@ -5,6 +5,13 @@
   outline-offset: -5px;
 }
 
+.slider__foto {
+  @media (min-width: $desktop-width) {
+    margin-top: -235px;
+    height: 530px;
+  }
+}
+
 .slider__toggles {
   @media (min-width: $tablet-width) {
     margin: 0 auto;

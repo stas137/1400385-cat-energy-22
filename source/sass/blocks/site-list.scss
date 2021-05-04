@@ -19,14 +19,23 @@
 
   &:last-child {
     border-bottom: 1px solid $page-header-grey;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
   }
 
   a {
     text-decoration: none;
     color: #000000;
+
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
+    }
   }
 
   @media (min-width: $tablet-width) {
+    padding: 18px 0 8px 0;
     font-size: 18px;
     line-height: 24px;
     border-top: none;
@@ -34,7 +43,18 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 4px 0 8px 0;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &--active {
+    @media (min-width: $tablet-width) {
+      border-bottom: 2px solid $basic-green;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid #ffffff;
+    }
   }
 }

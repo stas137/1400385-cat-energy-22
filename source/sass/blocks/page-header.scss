@@ -1,4 +1,6 @@
 .page-header {
+  position: relative;
+  z-index: 999;
   color: #000000;
 
   font-family: $caption-font;
