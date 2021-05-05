@@ -3,6 +3,10 @@
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
 
+  @media (min-width: $tablet-width) {
+    background-color: $basic-grey;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 95px;
@@ -24,12 +28,6 @@
     padding: 66px 89px 51px 76px;
     width: 570px;
     background-color: #ffffff;
-  }
-}
-
-.collaboration__wrapper--form {
-  @media (min-width: $tablet-width) {
-    background-color: $basic-grey;
   }
 }
 

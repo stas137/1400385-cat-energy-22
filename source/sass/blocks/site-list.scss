@@ -17,7 +17,7 @@
   width: auto;
   text-align: center;
 
-  &:last-child {
+  &:nth-child(3) {
     border-bottom: 1px solid $page-header-grey;
 
     @media (min-width: $tablet-width) {
@@ -26,6 +26,7 @@
   }
 
   a {
+    padding-bottom: 5px;
     text-decoration: none;
     color: #000000;
 
@@ -35,7 +36,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 18px 0 8px 0;
+    padding: 18px 0 24px 0;
     font-size: 18px;
     line-height: 24px;
     border-top: none;
@@ -48,13 +49,25 @@
     line-height: 30px;
   }
 
-  &--active {
+  &--active a {
     @media (min-width: $tablet-width) {
       border-bottom: 2px solid $basic-green;
     }
 
     @media (min-width: $desktop-width) {
       border-bottom: 2px solid #ffffff;
+    }
+  }
+
+  &--active.site-list__item--black {
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid $basic-green;
+    }
+  }
+
+  &--black a {
+    @media (min-width: $desktop-width) {
+      color: #000000;
     }
   }
 }
