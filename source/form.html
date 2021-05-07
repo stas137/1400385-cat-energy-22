@@ -22,13 +22,13 @@
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
+              <li class="site-list__item">
                 <a href="index.html">Главная</a>
               </li>
               <li class="site-list__item">
                 <a href="catalog.html">Каталог продукции</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--active">
                 <a>Подбор программы</a>
               </li>
             </ul>
@@ -46,100 +46,110 @@
           </div>
         </div>
           <form class="program-form__fields form-data" action="https://echo.htmlacademy.ru" method="POST">
-            <div class="form-data__wrapper">
-              <div class="form-data__text">
-                <label for="username">Имя:*</label>
-                <input class="form-data__field" type="text" id="username" name="username" placeholder="Барсик" required />
-              </div>
-              <div class="form-data__text">
-                <label for="weight">Вес&nbsp;(кг):*</label>
-                <input class="form-data__field" type="number" id="weight" name="weight" placeholder="7" required />
-              </div>
-              <div class="form-data__text">
-                <label for="age">Возраст&nbsp;(лет):*</label>
-                <input class="form-data__field" type="number" id="age" name="age" placeholder="7" required />
-              </div>
-            </div>
-            <div class="form-data__radio-group">
+
+            <div class="form-data__grid">
               <div class="form-data__wrapper">
-                <div class="form-data__radio">
-                  <input type="radio" id="slimming" name="program-type" value="slimming" checked />
-                  <label for="slimming">Похудение</label>
+                <div class="form-data__text">
+                  <label class="form-data__label" for="username">Имя:*</label>
+                  <input class="form-data__field" type="text" id="username" name="username" placeholder="Барсик" required />
                 </div>
-                <div class="form-data__radio">
-                  <input type="radio" id="mass-gain" name="program-type" value="mass-gain" />
-                  <label for="mass-gain">Набор массы</label>
+                <div class="form-data__text">
+                  <label class="form-data__label" for="weight">Вес&nbsp;(кг):*</label>
+                  <input class="form-data__field" type="number" id="weight" name="weight" placeholder="7" required />
                 </div>
-                <div class="form-data__radio">
-                  <input type="radio" id="advice" name="program-type" value="advice" />
-                  <label for="advice">Не знаю (нужен ваш совет)</label>
+                <div class="form-data__text">
+                  <label class="form-data__label" for="age">Возраст&nbsp;(лет):*</label>
+                  <input class="form-data__field" type="number" id="age" name="age" placeholder="7" required />
+                </div>
+              </div>
+              <div class="form-data__radio-group">
+                <div class="form-data__wrapper">
+                  <div class="form-data__radio">
+                    <input type="radio" id="slimming" name="program-type" value="slimming" checked />
+                    <label class="form-data__label" for="slimming">Похудение</label>
+                  </div>
+                  <div class="form-data__radio">
+                    <input type="radio" id="mass-gain" name="program-type" value="mass-gain" />
+                    <label class="form-data__label" for="mass-gain">Набор массы</label>
+                  </div>
+                  <div class="form-data__radio">
+                    <input type="radio" id="advice" name="program-type" value="advice" />
+                    <label class="form-data__label" for="advice">Не знаю (нужен ваш совет)</label>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="form-data__wrapper">
+            <div class="form-data__additional-wrapper">
               <div class="form-data__contacts">
                 <p class="form-data__contacts-title">Контактные данные (владельца кота)</p>
-                <div class="form-data__email form-data__email--img">
-                  <label class="form-data__email-label" for="email">E-mail:*</label>
-                  <input class="form-data__field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required />
-                </div>
-                <div class="form-data__phone form-data__phone--img">
-                  <label class="form-data__phone-label" for="phone">Телефон:*</label>
-                  <input class="form-data__field" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required />
+                <div class="form-data__inline">
+                  <div class="form-data__email form-data__email--img">
+                    <label class="form-data__email-label" for="email">E-mail:*</label>
+                    <input class="form-data__field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required />
+                  </div>
+                  <div class="form-data__phone form-data__phone--img">
+                    <label class="form-data__label" for="phone">Телефон:*</label>
+                    <input class="form-data__field" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required />
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="form-data__wrapper">
+            <div class="form-data__additional-wrapper">
               <div class="form-data__comment">
                 <p class="form-data__comment-title">Комментарий</p>
                 <textarea class="form-data__comment-text" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </div>
 
-            <div class="form-data__wrapper">
+            <div class="form-data__additional-wrapper">
               <div class="form-data__additional">
                 <p class="form-data__comment-additional">Дополнительно</p>
-                <div class="form-data__checkbox">
-                  <input type="checkbox" id="sweetener" name="sweetener" value="sweetener" checked />
-                  <label for="sweetener">Сахарозаменитель</label>
-                </div>
-                <div class="form-data__checkbox">
-                  <input type="checkbox" id="water" name="water" value="water" />
-                  <label for="water">Питьевая вода</label>
-                </div>
-                <div class="form-data__checkbox">
-                  <input type="checkbox" id="milk" name="milk" value="milk" />
-                  <label for="milk">Молоко</label>
-                </div>
-                <div class="form-data__checkbox">
-                  <input type="checkbox" id="vitamins" name="vitamins" value="vitamins" />
-                  <label for="vitamins">Витамины</label>
+                <div class="form-data__group">
+                  <div class="form-data__checkbox">
+                    <input type="checkbox" id="sweetener" name="sweetener" value="sweetener" checked />
+                    <label class="form-data__label" for="sweetener">Сахарозаменитель</label>
+                  </div>
+                  <div class="form-data__checkbox">
+                    <input type="checkbox" id="water" name="water" value="water" />
+                    <label class="form-data__label" for="water">Питьевая вода</label>
+                  </div>
+                  <div class="form-data__checkbox">
+                    <input type="checkbox" id="milk" name="milk" value="milk" />
+                    <label class="form-data__label" for="milk">Молоко</label>
+                  </div>
+                  <div class="form-data__checkbox">
+                    <input type="checkbox" id="vitamins" name="vitamins" value="vitamins" />
+                    <label class="form-data__label" for="vitamins">Витамины</label>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="form-data__wrapper">
-              <input class="form-data__submit" type="submit" value="Отправить заявку" />
+            <div class="form-data__additional-wrapper">
+              <div class="form-data__send">
+                <input class="form-data__submit" type="submit" value="Отправить заявку" />
+                <p class="form-data__required-fields">* &mdash; Обязательные поля</p>
+              </div>
             </div>
-
-            <p class="form-data__required-fields">* &mdash; Обязательные поля</p>
           </form>
 
       </section>
 
-      <section class="collaboration">
-        <div class="collaboration__wrapper">
-          <h2 class="collaboration__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <p class="collaboration__contacts">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <section class="contacts">
+        <div class="contacts__item collaboration">
+          <div class="collaboration__wrapper">
+            <h2 class="collaboration__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <p class="collaboration__contacts">ул. Большая Конюшенная, д. 19/8 <span class="collaboration__gap">Санкт-Петербург</span></p>
+          </div>
         </div>
-      </section>
 
-      <section class="map">
-        <div class="map__wrapper">
-          <h2 class="visually-hidden">Карта</h2>
-          <img class="map__img" src="img/rectangle.svg" alt="Карта">
+        <div class="contacts__item map">
+          <div class="map__wrapper">
+            <h2 class="visually-hidden">Карта</h2>
+            <img class="map__img" src="img/map.svg" alt="Карта">
+          </div>
         </div>
       </section>
     </main>

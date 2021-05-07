@@ -1,8 +1,8 @@
 .additional-good__name {
   @include title(16px);
+  line-height: 18px;
   margin: 0;
   padding: 0;
-  line-height: 18px;
   color: #222222;
 }
 

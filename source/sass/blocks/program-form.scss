@@ -5,13 +5,29 @@
 
 .program-form__wrapper {
   @include alignment();
-  padding: 27px 0 0 0;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
 }
 
 .program-form__promo {
   padding: 0 20px;
   font-family: $caption-font;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 0 110px;
+  }
 }
 
 .program-form__title {
@@ -20,6 +36,11 @@
   font-size: 36px;
   font-weight: normal;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .program-form__subtitle {
@@ -30,8 +51,19 @@
   font-size: 14px;
   font-weight: normal;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 54px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+  }
 }
 
 .program-form__fields {
   padding-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+  }
 }
