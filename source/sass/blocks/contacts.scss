@@ -1,3 +1,13 @@
 .contacts {
   position: relative;
+
+  &--catalog {
+    @media (min-width: $tablet-width) {
+      margin-top: 69px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 86px;
+    }
+  }
 }

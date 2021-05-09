@@ -6,18 +6,53 @@
 
 .good-item__wrapper {
   @include alignment();
-  padding: 19px 20px 25px 20px;
+  padding: 20px 20px 25px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px 40px 40px;
+    width: 324px;
+    height: 430px;
+    background-color: $basic-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .good-item__table {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-items: center;
   align-items: center;
+  row-gap: 22px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 100%;
+    row-gap: 0;
+  }
+}
+
+.good-item__info {
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+  }
 }
 
 .good-item__link {
   text-decoration: none;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -45px;
+
+    img {
+      width: 155px;
+    }
+  }
 }
 
 .good-item__name {
@@ -26,10 +61,15 @@
   padding: 0;
   width: 76px;
   color: #222222;
-}
+  text-align: left;
 
-.good-item__info {
-  justify-self: stretch;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 155px;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .good-item__table-info {
@@ -38,6 +78,11 @@
   font-size: 12px;
   color: $special-dark-grey;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .good-item__name-value {
@@ -48,8 +93,19 @@
     margin: 0;
     padding: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 .good-item__order {
   @include button();
+  grid-column: span 2;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 33px;
+  }
 }
