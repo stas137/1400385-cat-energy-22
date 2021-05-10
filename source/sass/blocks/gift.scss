@@ -3,11 +3,31 @@
   flex-direction: column;
   align-items: center;
   background: url("../img/gift-photo.svg") 50% 50% no-repeat;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    background: url("../img/gift-photo-tablet.svg") 50% 50% no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    background: url("../img/gift-photo.svg") 50% 50% no-repeat;
+  }
 }
 
 .gift__img {
   padding: 0;
   padding-top: 58px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    margin-left: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 56px;
+    margin-left: 0;
+  }
 }
 
 .gift__title {
@@ -19,4 +39,16 @@
   line-height: 20px;
   text-align: center;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    margin-left: 265px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 47px;
+    margin-left: 0;
+    text-align: center;
+  }
 }
