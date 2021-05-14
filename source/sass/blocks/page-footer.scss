@@ -11,8 +11,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 55px 30px 61px 30px;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,6 +36,7 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     display: flex;
+    justify-content: flex-start;
   }
 }
 
@@ -47,6 +48,8 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     display: flex;
+    justify-content: center;
+    border: none;
   }
 }
 
