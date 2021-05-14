@@ -1,7 +1,5 @@
 .page-footer {
   background-color: $basic-grey;
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -3px;
 }
 
 .page-footer__wrapper {
@@ -26,8 +24,6 @@
   padding-bottom: 32px;
   text-align: center;
   cursor: pointer;
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
 
   &:hover {
     opacity: 0.8;
