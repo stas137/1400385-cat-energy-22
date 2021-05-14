@@ -8,12 +8,40 @@
   outline-offset: -5px;
 }
 
-
 .copyright__link {
   color: $special-dark-grey;
   text-decoration: none;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     padding-right: 22px;
+  }
+}
+
+.copyright__img {
+  svg {
+    path {
+      fill: #666666;
+    }
+  }
+
+  &:hover {
+    svg {
+      path {
+        fill: $basic-green;
+      }
+    }
+  }
+
+  &:active {
+    svg {
+      path {
+        fill: $basic-green;
+        opacity: 0.3;
+      }
+    }
   }
 }

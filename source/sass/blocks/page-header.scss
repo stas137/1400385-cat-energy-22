@@ -46,10 +46,10 @@
 .page-header__container {
   padding: 0 20px;
   height: 66px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 38px 101px 24px;
   align-items: center;
-
+  justify-content: space-between;
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
 

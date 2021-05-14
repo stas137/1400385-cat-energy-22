@@ -15,7 +15,8 @@
   padding: 27px 20px 25px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 43px 30px 33px 30px;
+    padding: 0;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,6 +34,7 @@
   line-height: 40px;
 
   @media (min-width: $tablet-width) {
+    padding: 43px 30px 0 30px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -67,46 +69,44 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    padding-top: 63px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 0;
+    padding: 0;
   }
 }
 
 .example__cell {
+  @media (min-width: $tablet-width) {
+    padding: 63px 30px 0 30px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 436px;
   }
 }
 
 .example__table {
+  padding-top: 25px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 54px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
+    padding-top: 69px;
   }
 }
 
 .example__list {
   margin: 0;
   padding: 0;
-  padding-top: 25px;
   list-style: none;
   display: flex;
   justify-content: space-between;
 
-  @media (min-width: $tablet-width) {
-    padding-top: 54px;
-  }
-
   @media (min-width: $desktop-width) {
-    padding-top: 69px;
     justify-content: flex-start;
   }
 }
@@ -161,13 +161,14 @@
   @media (min-width: $desktop-width) {
     font-size: 14px;
     line-height: 14px;
+    width: 142px;
     background-color: $basic-grey;
   }
 }
 
 .example__spending {
   margin: 0;
-  padding-top: 25px;
+  padding-top: 15px;
   font-family: $caption-font;
   line-height: 20px;
   text-transform: uppercase;
@@ -205,10 +206,13 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 59px;
+    padding-bottom: 64px;
+    background-color: $example-grey;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
     width: 690px;
+    background-color: $basic-grey;
   }
 }
