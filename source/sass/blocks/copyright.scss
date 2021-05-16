@@ -1,49 +1,42 @@
 .copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 16px;
-  line-height: 19px;
-
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
   }
 }
 
 .copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: $special-dark-grey;
   text-decoration: none;
+
+  &:hover {
+    .copyright__img {
+      background: url("../img/copyright-logo-hover.svg") 50% 50% no-repeat;
+    }
+  }
 
   &:active {
     opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
-    padding-right: 22px;
+    justify-content: flex-end;
   }
 }
 
 .copyright__img {
-  svg {
-    path {
-      fill: #666666;
-    }
-  }
+  width: 27px;
+  height: 34px;
+  background: url("../img/copyright-logo.svg") 50% 50% no-repeat;
+}
 
-  &:hover {
-    svg {
-      path {
-        fill: $basic-green;
-      }
-    }
-  }
+.copyright__text {
+  font-size: 16px;
+  line-height: 19px;
 
-  &:active {
-    svg {
-      path {
-        fill: $basic-green;
-        opacity: 0.3;
-      }
-    }
+  @media (min-width: $tablet-width) {
+    padding-right: 22px;
   }
 }

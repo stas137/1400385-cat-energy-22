@@ -1,12 +1,14 @@
 .example {
   background-color: $example-grey;
   color: #000000;
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
     border-top: 1px solid $page-header-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-top: none;
   }
 }
 
@@ -54,7 +56,7 @@
 .example__card-wrapper {
   @media (min-width: $desktop-width) {
     @include alignment();
-    padding: 70px 110px 75px 110px;
+    padding: 70px 110px 64px 110px;
     display: flex;
     justify-content: space-between;
   }
@@ -79,6 +81,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     width: 436px;
   }
 }
@@ -200,18 +203,16 @@
 }
 
 .example__explain {
-  margin: 0;
-  padding: 0;
-  padding-top: 42px;
+  margin-top: 42px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 59px;
-    padding-bottom: 64px;
+    margin-top: 250px;
+    padding-bottom: 67px;
     background-color: $example-grey;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
+    padding-bottom: 0;
     width: 690px;
     background-color: $basic-grey;
   }

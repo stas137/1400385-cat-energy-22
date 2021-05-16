@@ -1,8 +1,3 @@
-.how-work {
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
-}
-
 .how-work__wrapper {
   @include alignment();
   padding: 27px 20px 42px 20px;
@@ -59,25 +54,25 @@
   line-height: 18px;
   color: $special-dark-grey;
 
-  &:first-child {
+  &--health {
     @media (min-width: $tablet-width) {
       background: url("../img/1.svg") no-repeat 75% 100%;
     }
   }
 
-  &:nth-child(2) {
+  &--issue {
     @media (min-width: $tablet-width) {
       background: url("../img/2.svg") no-repeat 75% 100%;
     }
   }
 
-  &:nth-child(3) {
+  &--reception {
     @media (min-width: $tablet-width) {
       background: url("../img/3.svg") no-repeat 75% 100%;
     }
   }
 
-  &:last-child {
+  &--result {
     margin-bottom: 0;
 
     @media (min-width: $tablet-width) {
@@ -92,6 +87,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
+    align-items: flex-start;
     margin-bottom: 37px;
     padding-top: 50px;
     width: 249px;
@@ -100,9 +96,44 @@
 }
 
 .how-work__img {
+  min-width: 60px;
+  height: 60px;
+
+  &--health {
+    background: url("../img/health-mobile.png") 50% 50% no-repeat;
+  }
+
+  &--issue {
+    background: url("../img/issue-mobile.png") 50% 50% no-repeat;
+  }
+
+  &--reception {
+    background: url("../img/reception-mobile.png") 50% 50% no-repeat;
+  }
+
+  &--result {
+    background: url("../img/result-mobile.png") 50% 50% no-repeat;
+  }
+
   @media (min-width: $tablet-width) {
-    width: 80px;
+    min-width: 80px;
     height: 80px;
+
+    &--health {
+      background: url("../img/health-tablet.png") 50% 50% no-repeat;
+    }
+
+    &--issue {
+      background: url("../img/issue-tablet.png") 50% 50% no-repeat;
+    }
+
+    &--reception {
+      background: url("../img/reception-tablet.png") 50% 50% no-repeat;
+    }
+
+    &--result {
+      background: url("../img/result-tablet.png") 50% 50% no-repeat;
+    }
   }
 }
 

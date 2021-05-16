@@ -8,16 +8,6 @@
   font-weight: 500;
   line-height: 20px;
   text-transform: uppercase;
-
-  span {
-    width: 24px;
-    height: 24px;
-    background-color: #ffffff;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
 }
 
 .page-header__wrapper {
@@ -44,14 +34,15 @@
   padding: 0 20px;
   height: 66px;
   display: grid;
-  grid-template-columns: 38px 101px 24px;
+  grid-template-columns: 38px 1fr 24px;
   align-items: center;
-  justify-content: space-between;
+  justify-items: center;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     width: 174px;
     height: 52px;
+    grid-template-columns: 174px;
     cursor: pointer;
 
     &:hover {
@@ -67,13 +58,34 @@
     padding: 0;
     width: 202px;
     height: 59px;
+    grid-template-columns: 202px;
   }
 }
 
 .page-header__logo {
+  width: 34px;
+  height: 38px;
+  background: url("../img/logo-mobile.svg") 50% 50% no-repeat;
+
   @media (min-width: $tablet-width) {
-    img {
-      width: 55px;
-    }
+    width: 174px;
+    height: 52px;
+    background: url("../img/logo-tablet.svg") 50% 50% no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+    background: url("../img/logo-desktop.svg") 50% 50% no-repeat;
+  }
+}
+
+.page-header__logo-text {
+  width: 101px;
+  height: 18px;
+  background: url("../img/logo-text.svg") 50% 50% no-repeat;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

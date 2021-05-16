@@ -19,6 +19,9 @@
 }
 
 .program__promo-img {
+  display: flex;
+  justify-content: center;
+
   @media (min-width: $tablet-width) {
     order: 2;
   }
@@ -31,7 +34,7 @@
       left: 50%;
       width: 50%;
       height: 696px;
-      background: $special-dark-grey url("../img/background-desktop.svg") 50% 50% no-repeat;
+      background: $special-dark-grey url("../img/background-desktop.png") 50% 50% no-repeat;
       background-size: cover;
     }
 
@@ -58,10 +61,8 @@
   align-items: center;
   font-family: $caption-font;
   color: #ffffff;
-  background: $special-dark-grey url("../img/background-mobile.svg") 0% 0% no-repeat;
+  background: $special-dark-grey url("../img/background-mobile.png") 0% 0% no-repeat;
   background-size: 100%;
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     padding: 62px 30px 0 30px;
@@ -148,16 +149,16 @@
 }
 
 .program__img {
+  width: 280px;
+  height: 270px;
   margin-top: -140px;
-  display: flex;
-  justify-content: center;
+  background: url("../img/promo-mobile.png") 0 0 no-repeat;
 
   @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 609px;
     margin-top: -83px;
-
-    img {
-      min-width: 708px;
-    }
+    background: url("../img/promo-tablet.png") 0 0 no-repeat;
   }
 
   @media (min-width: $desktop-width) {
@@ -166,10 +167,9 @@
     margin-top: -515px;
     margin-left: 250px;
     padding-bottom: 54px;
-
-    img {
-      min-width: 552px;
-    }
+    width: 552px;
+    height: 499px;
+    background: url("../img/promo-desktop.png") 0 0 no-repeat;
   }
 }
 
@@ -227,8 +227,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -291,26 +289,38 @@
 }
 
 .program__item-img-slim {
+  width: 50px;
+  height: 53px;
+  background: url("../img/cat-slim-mobile.png") 50% 50% no-repeat;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 
   @media (min-width: $desktop-width) {
-    display: inline-block;
+    display: block;
     margin-right: 62px;
     width: 100px;
+    height: 106px;
+    background: url("../img/cat-slim-desktop.png") 50% 50% no-repeat;
   }
 }
 
 .program__item-img-pro {
+  width: 67px;
+  height: 50px;
+  background: url("../img/cat-pro-mobile.png") 50% 50% no-repeat;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 
   @media (min-width: $desktop-width) {
-    display: inline-block;
+    display: block;
     margin-right: 47px;
     width: 134px;
+    height: 100px;
+    background: url("../img/cat-pro-desktop.png") 50% 50% no-repeat;
   }
 }
 
@@ -379,20 +389,9 @@
   &--pointer {
     text-decoration: none;
 
-    &:hover {
-      svg {
-        transform-origin: 0 50%;
-        transform: scale(1.25, 1);
-      }
-    }
-
     &:active {
       opacity: 0.3;
     }
-  }
-
-  span {
-    margin-right: 15px;
   }
 
   @media (min-width: $tablet-width) {
@@ -404,5 +403,41 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 27px;
+  }
+}
+
+.program__catalog-name {
+  position: relative;
+  margin-right: 15px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 100px;
+    width: 32px;
+    height: 12px;
+    background: url("../img/arrow.svg") 0 0 no-repeat;
+  }
+
+  &:hover {
+    &::after {
+      left: 104px;
+      transform: scale(1.25, 1);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      top: 9px;
+      left: 133px;
+    }
+
+    &:hover {
+      &::after {
+        left: 137px;
+        transform: scale(1.25, 1);
+      }
+    }
   }
 }

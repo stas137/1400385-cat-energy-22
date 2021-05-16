@@ -1,14 +1,54 @@
 .slider {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #000000;
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
 }
 
-.slider__foto {
-  @media (min-width: $desktop-width) {
+.slider__before-after {
+  @media (min-width: $tablet-width) {
     margin-top: -235px;
-    height: 530px;
+    display: flex;
+    height: 550px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -500px;
+    height: 550px;
+  }
+}
+
+.slider__before {
+  width: 280px;
+  height: 232px;
+  background: url("../img/before-mobile.png") 50% 50% no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 354px;
+    height: 620px;
+    background: url("../img/before-tablet.png") 50% 50% no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 405px;
+    height: 536px;
+    background: url("../img/before-desktop.png") 50% 50% no-repeat;
+  }
+}
+
+.slider__after {
+  @media (min-width: $tablet-width) {
+    width: 354px;
+    height: 620px;
+    background: url("../img/after-tablet.png") 50% 50% no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    left: -40px;
+    width: 325px;
+    height: 654px;
+    background: url("../img/after-desktop.png") 50% 50% no-repeat;
   }
 }
 
@@ -29,58 +69,79 @@
   position: relative;
   border: none;
   outline: none;
-  width: 70px;
-  height: 40px;
+  width: 40px;
+  margin: 0 12px;
   padding: 0;
   background-color: $special-grey;
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 15px;
-    right: 15px;
-    bottom: 5px;
-    height: 1px;
-    background-color: #cdcdcd;
-  }
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #cdcdcd;
 
   &:hover {
-    &::after {
-      background-color: $special-dark-grey;
-    }
+    border-bottom: 1px dotted $special-dark-grey;
   }
 
   &:active {
-    &::after {
-      background-color: $special-grey;
-    }
+    border-bottom: 1px dotted $special-grey;
   }
 
   @media (min-width: $tablet-width) {
+    width: 50px;
     font-size: 20px;
     line-height: 30px;
     background-color: $example-grey;
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 10px;
-      right: 10px;
-      bottom: 5px;
-      height: 1px;
-      background-color: #cdcdcd;
-    }
   }
 
   @media (min-width: $desktop-width) {
     background-color: $basic-grey;
+    border-bottom: 1px dotted #000000;
   }
 }
 
 .slider__set {
+  position: relative;
   width: 84px;
+  height: 14px;
+  background-color: #ffffff;
+  border-radius: 7px;
+  border: 1px solid #cdcdcd;
+  margin-bottom: 5px;
 
   @media (min-width: $tablet-width) {
     width: 428px;
+    height: 6px;
+    border: none;
+    background-color: #dcdcdc;
+  }
+}
+
+.slider__progress {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 35px;
+  height: 6px;
+  background-color: $basic-green;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    top: -14px;
+    left: 197px;
+    width: 34px;
+    height: 34px;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 17px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      width: 8px;
+      height: 8px;
+      background-color: $basic-green;
+      border-radius: 4px;
+    }
   }
 }
