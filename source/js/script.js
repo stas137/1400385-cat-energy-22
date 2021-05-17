@@ -17,4 +17,3 @@ mainNavToggle.addEventListener('click', () => {
     mainNavButton.classList.remove('main-nav-button--opened');
   }
 });
-
