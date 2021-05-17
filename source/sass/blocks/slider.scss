@@ -21,26 +21,25 @@
 .slider__before {
   width: 280px;
   height: 232px;
-  background: url("../img/before-mobile.png") 50% 50% no-repeat;
 
   @media (min-width: $tablet-width) {
     width: 354px;
     height: 620px;
-    background: url("../img/before-tablet.png") 50% 50% no-repeat;
   }
 
   @media (min-width: $desktop-width) {
     width: 405px;
     height: 536px;
-    background: url("../img/before-desktop.png") 50% 50% no-repeat;
   }
 }
 
 .slider__after {
+  display: none;
+
   @media (min-width: $tablet-width) {
+    display: inline-block;
     width: 354px;
     height: 620px;
-    background: url("../img/after-tablet.png") 50% 50% no-repeat;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,7 +47,6 @@
     left: -40px;
     width: 325px;
     height: 654px;
-    background: url("../img/after-desktop.png") 50% 50% no-repeat;
   }
 }
 

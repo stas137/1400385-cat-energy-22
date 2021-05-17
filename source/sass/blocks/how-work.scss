@@ -46,6 +46,7 @@
 }
 
 .how-work__item {
+  position: relative;
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
@@ -53,12 +54,6 @@
   font-weight: normal;
   line-height: 18px;
   color: $special-dark-grey;
-
-  &--health {
-    @media (min-width: $tablet-width) {
-      background: url("../img/1.svg") no-repeat 75% 100%;
-    }
-  }
 
   &--issue {
     @media (min-width: $tablet-width) {
@@ -92,6 +87,54 @@
     padding-top: 50px;
     width: 249px;
     height: 280px;
+
+    &--health {
+      &::after {
+        @include title(280px);
+        content: "1";
+        line-height: 0;
+        position: absolute;
+        top: 150px;
+        right: 20px;
+        color: $basic-grey;
+      }
+    }
+
+    &--issue {
+      &::after {
+        @include title(280px);
+        content: "2";
+        line-height: 0;
+        position: absolute;
+        top: 150px;
+        right: 20px;
+        color: $basic-grey;
+      }
+    }
+
+    &--reception {
+      &::after {
+        @include title(280px);
+        content: "3";
+        line-height: 0;
+        position: absolute;
+        top: 150px;
+        right: 20px;
+        color: $basic-grey;
+      }
+    }
+
+    &--result {
+      &::after {
+        @include title(280px);
+        content: "4";
+        line-height: 0;
+        position: absolute;
+        top: 150px;
+        right: 20px;
+        color: $basic-grey;
+      }
+    }
   }
 }
 
@@ -99,41 +142,9 @@
   min-width: 60px;
   height: 60px;
 
-  &--health {
-    background: url("../img/health-mobile.png") 50% 50% no-repeat;
-  }
-
-  &--issue {
-    background: url("../img/issue-mobile.png") 50% 50% no-repeat;
-  }
-
-  &--reception {
-    background: url("../img/reception-mobile.png") 50% 50% no-repeat;
-  }
-
-  &--result {
-    background: url("../img/result-mobile.png") 50% 50% no-repeat;
-  }
-
   @media (min-width: $tablet-width) {
     min-width: 80px;
     height: 80px;
-
-    &--health {
-      background: url("../img/health-tablet.png") 50% 50% no-repeat;
-    }
-
-    &--issue {
-      background: url("../img/issue-tablet.png") 50% 50% no-repeat;
-    }
-
-    &--reception {
-      background: url("../img/reception-tablet.png") 50% 50% no-repeat;
-    }
-
-    &--result {
-      background: url("../img/result-tablet.png") 50% 50% no-repeat;
-    }
   }
 }
 
@@ -143,6 +154,8 @@
   margin-left: 20px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 999;
     margin-left: 0;
     padding-top: 31px;
     font-size: 16px;

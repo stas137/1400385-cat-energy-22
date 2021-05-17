@@ -18,66 +18,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.social__link-vkontakte {
-  width: 23px;
-  height: 16px;
-  background: url("../img/icon-vkontakte.svg") 50% 50% no-repeat;
+  &--vkontakte {
+    width: 23px;
+    height: 16px;
+    background: url("../img/icon-vkontakte.svg") 50% 50% no-repeat;
 
-  &:hover {
-    background: url("../img/icon-vkontakte-hover.svg") 50% 50% no-repeat;
+    @media (min-width: $tablet-width) {
+      width: 30px;
+    }
   }
 
-  &:active {
-    background: url("../img/icon-vkontakte-hover.svg") 50% 50% no-repeat;
-    opacity: 0.3;
+  &--instagram {
+    margin-left: 36px;
+    margin-right: 33px;
+    width: 23px;
+    height: 16px;
+    background: url("../img/icon-instagram.svg") 50% 50% no-repeat;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 20px;
+      margin-right: 15px;
+      width: 30px;
+    }
   }
 
-  @media (min-width: $tablet-width) {
-    width: 30px;
-  }
-}
+  &--facebook {
+    width: 22px;
+    height: 22px;
+    background: url("../img/icon-facebook.svg") 50% 50% no-repeat;
 
-.social__link-instagram {
-  margin-left: 36px;
-  margin-right: 33px;
-  width: 23px;
-  height: 16px;
-  background: url("../img/icon-instagram.svg") 50% 50% no-repeat;
-
-  &:hover {
-    background: url("../img/icon-instagram-hover.svg") 50% 50% no-repeat;
-  }
-
-  &:active {
-    background: url("../img/icon-instagram-hover.svg") 50% 50% no-repeat;
-    opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-left: 20px;
-    margin-right: 15px;
-    width: 30px;
+    @media (min-width: $tablet-width) {
+      width: 30px;
+    }
   }
 }
-
-.social__link-facebook {
-  width: 22px;
-  height: 22px;
-  background: url("../img/icon-facebook.svg") 50% 50% no-repeat;
-
-  &:hover {
-    background: url("../img/icon-facebook-hover.svg") 50% 50% no-repeat;
-  }
-
-  &:active {
-    background: url("../img/icon-facebook-hover.svg") 50% 50% no-repeat;
-    opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 30px;
-  }
-}
-

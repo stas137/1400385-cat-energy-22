@@ -11,12 +11,6 @@
   color: $special-dark-grey;
   text-decoration: none;
 
-  &:hover {
-    .copyright__img {
-      background: url("../img/copyright-logo-hover.svg") 50% 50% no-repeat;
-    }
-  }
-
   &:active {
     opacity: 0.3;
   }
@@ -29,7 +23,6 @@
 .copyright__img {
   width: 27px;
   height: 34px;
-  background: url("../img/copyright-logo.svg") 50% 50% no-repeat;
 }
 
 .copyright__text {
