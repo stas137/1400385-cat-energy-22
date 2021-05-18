@@ -24,7 +24,7 @@
 
   @media (min-width: $tablet-width) {
     width: 354px;
-    height: 620px;
+    height: 540px;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,7 +37,7 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: inline-block;
+    display: none;
     width: 354px;
     height: 620px;
   }
