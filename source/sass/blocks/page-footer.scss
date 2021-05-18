@@ -1,7 +1,5 @@
 .page-footer {
   background-color: $basic-grey;
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -3px;
 }
 
 .page-footer__wrapper {
@@ -13,8 +11,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 55px 30px 61px 30px;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,12 +23,20 @@
 .page-footer__logo-text {
   padding-bottom: 32px;
   text-align: center;
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
     display: flex;
+    justify-content: flex-start;
   }
 }
 
@@ -42,6 +48,8 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     display: flex;
+    justify-content: center;
+    border: none;
   }
 }
 

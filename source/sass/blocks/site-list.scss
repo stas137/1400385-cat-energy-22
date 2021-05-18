@@ -6,7 +6,18 @@
   color: #000000;
 
   a {
+    display: block;
     color: #000000;
+
+    &[href] {
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
   }
 
   &--home-page {
@@ -17,9 +28,17 @@
     }
 
     .site-list__item--active {
-      a {
-        @media (min-width: $desktop-width) {
-          border-bottom: 2px solid #ffffff;
+      position: relative;
+
+      @media (min-width: $desktop-width) {
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 15px;
+          height: 2px;
+          background-color: #ffffff;
         }
       }
     }
@@ -27,12 +46,16 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    width: 494px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 540px;
   }
 }
 
 .site-list__item {
-  padding: 22px 0 24px 0;
   border-top: 1px solid $page-header-grey;
   width: auto;
   text-align: center;
@@ -46,28 +69,40 @@
   }
 
   a {
-    padding-bottom: 5px;
+    padding: 22px 0 24px 0;
     text-decoration: none;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 18px 0 24px 0;
     font-size: 18px;
     line-height: 24px;
     border-top: none;
     border-bottom: none;
+    margin-left: 34px;
+
+    a {
+      padding: 18px 0 24px 0;
+      text-decoration: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 4px 0 8px 0;
     font-size: 20px;
     line-height: 30px;
   }
 
   &--active {
-    a {
-      @media (min-width: $tablet-width) {
-        border-bottom: 2px solid $basic-green;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 15px;
+        height: 2px;
+        background-color: $basic-green;
       }
     }
   }
