@@ -177,7 +177,6 @@
   position: relative;
   margin: 0;
   padding: 0;
-  background-color: #5eaa2f;
   font-family: $caption-font;
   text-align: center;
 }
@@ -193,7 +192,7 @@
 }
 
 .program__link {
-  padding: 7px 0;
+  padding: 10px 0;
   display: block;
   color: #ffffff;
   background-color: $basic-green;
@@ -208,7 +207,7 @@
 
   &:active {
     background-color: #5eaa2f;
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
   }
 
   @media (min-width: $tablet-width) {
