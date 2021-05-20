@@ -1,7 +1,5 @@
 .good-item {
   border-top: 1px solid $page-header-grey;
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
 }
 
 .good-item__wrapper {
@@ -47,7 +45,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-top: -45px;
+    margin-top: -70px;
 
     img {
       width: 155px;
