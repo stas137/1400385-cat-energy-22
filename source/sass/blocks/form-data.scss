@@ -191,6 +191,7 @@
 
 .form-data__contacts {
   padding-top: 26px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding-top: 69px;
@@ -199,44 +200,80 @@
 
 .form-data__title {
   position: relative;
-  margin: 0;
-  padding: 0;
-  padding-left: 20px;
   font-size: 24px;
   font-weight: normal;
   line-height: 30px;
   color: #000000;
   text-transform: initial;
-  overflow: hidden;
 
   &--decorate {
+    margin: 0;
+    padding: 0;
+
     &::before,
     &::after {
       content: "";
       position: absolute;
-      top: 30%;
-      width: 100%;
+      top: 50%;
       height: 2px;
       border-bottom: 2px solid $basic-green;
     }
 
     &::before {
-      margin-left: calc(-100% - 40px);
+      width: 100%;
+      margin-left: calc(-100% - 22px);
     }
 
     &::after {
-      margin-left: 35px;
+      width: 150%;
+      margin-left: 22px;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::before {
+        margin-left: calc(-100% - 40px);
+      }
+
+      &::after {
+        margin-left: 40px;
+      }
+    }
+  }
+
+  &--decorate-spec {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 30%;
+      height: 2px;
+      border-bottom: 2px solid $basic-green;
+    }
+
+    &::before {
+      width: 100%;
+      margin-left: calc(-100% - 25px);
+    }
+
+    &::after {
+      width: 150%;
+      margin-left: 45px;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::before {
+        margin-left: calc(-100% - 40px);
+      }
+
+      &::after {
+        margin-left: 40px;
+      }
     }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 48px;
-    padding-left: 70px;
-
-    br {
-      display: none;
-    }
 
     &--decorate {
       &::before,
@@ -247,6 +284,13 @@
   }
 }
 
+.form-data__title-wrapper {
+  width: 222px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+}
 
 .form-data__email {
   position: relative;
@@ -333,6 +377,7 @@
 
 .form-data__comment {
   padding-top: 24px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding-top: 52px;
@@ -377,11 +422,13 @@
   width: 100%;
   height: 150px;
   margin-top: 36px;
+  padding: 10px 13px;
   line-height: 18px;
   border: 1px solid $special-grey;
 
   @media (min-width: $tablet-width) {
     margin-top: 76px;
+    padding: 10px 19px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -389,6 +436,7 @@
 
 .form-data__additional {
   padding: 24px 0 34px 0;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding: 65px 0 0 0;

@@ -17,6 +17,11 @@
   @include alignment();
   padding: 28px 20px 28px 20px;
   display: flex;
+  background-color: $basic-grey;
+
+  &--home-page {
+    background-color: #ffffff;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 66px 30px 51px 30px;
