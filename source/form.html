@@ -11,10 +11,10 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__container">
-          <a class="page-header__logo">
+          <a href="index.html" class="page-header__logo">
             <img src="img/logo.svg" alt="Функциональное питание для котов CAT ENERGY">
           </a>
-          <a class="page-header__logo-text">
+          <a href="index.html" class="page-header__logo-text">
             <img src="img/logo-text.svg" alt="CAT ENERGY">
           </a>
           <div class="main-nav-button main-nav-button--closed main-nav-button--nojs">
@@ -86,7 +86,13 @@
             </div>
 
             <div class="form-data__contacts">
-              <p class="form-data__title form-data__title--decorate">Контактные данные<br>(владельца кота)</p>
+              <div class="form-data__additional-wrapper">
+                <div class="form-data__title">
+                  <div class="form-data__title-wrapper">
+                    <p class="form-data__title--decorate form-data__title--decorate-spec">Контактные данные (владельца кота)</p>
+                  </div>
+                </div>
+              </div>
               <div class="form-data__additional-wrapper">
                 <div class="form-data__contacts-wrapper">
                   <div class="form-data__email form-data__email--img">
@@ -102,14 +108,18 @@
             </div>
 
             <div class="form-data__comment">
-              <p class="form-data__title form-data__title--decorate">Комментарий</p>
+              <div class="form-data__additional-wrapper">
+                <p class="form-data__title form-data__title--decorate">Комментарий</p>
+              </div>
               <div class="form-data__additional-wrapper">
                 <textarea class="form-data__comment-text" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </div>
 
             <div class="form-data__additional">
-              <p class="form-data__title form-data__title--decorate">Дополнительно</p>
+              <div class="form-data__additional-wrapper">
+                <p class="form-data__title form-data__title--decorate">Дополнительно</p>
+              </div>
               <div class="form-data__additional-wrapper form-data__group">
                 <div class="form-data__checkbox">
                   <input type="checkbox" id="sweetener" name="sweetener" value="sweetener" checked />
@@ -158,7 +168,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo-text">
+        <a href="index.html" class="page-footer__logo-text">
           <img src="img/footer-logo.svg" width="128" height="24" alt="CAT ENERGY">
         </a>
         <div class="page-footer__social social">
@@ -179,7 +189,7 @@
         </div>
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTML Academy">
-            <p class="copyright__text">HTML Academy</p>
+            <span class="copyright__text">HTML Academy</span>
             <img class="copyright__img" src="img/copyright-logo.svg" alt="HTML Academy">
           </a>
         </div>
