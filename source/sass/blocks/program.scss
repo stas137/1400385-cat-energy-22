@@ -38,8 +38,15 @@
       left: 50%;
       width: 50%;
       height: 696px;
-      background: $special-dark-grey url("../img/background-desktop.png") 50% 50% no-repeat;
+      background-color: $special-dark-grey;
+      background-image: url("../img/background-desktop.png");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
       background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background-desktop@2x.png");
+      }
     }
 
     &::after {
@@ -65,8 +72,15 @@
   align-items: center;
   font-family: $caption-font;
   color: #ffffff;
-  background: $special-dark-grey url("../img/background-mobile.png") 0% 0% no-repeat;
-  background-size: 100%;
+  background-color: $special-dark-grey;
+  background-image: url("../img/background-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-mobile@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     padding: 62px 30px 0 30px;

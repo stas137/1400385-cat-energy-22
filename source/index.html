@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
   </head>
   <body class="page__body">
 
@@ -60,9 +64,9 @@
           </div>
           <div class="program__wrapper program__promo-img">
             <picture>
-              <source media="(min-width: 1440px" srcset="img/promo-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/promo-tablet.png">
-              <img class="program__img" src="img/promo-mobile.png" alt="Промо изображение">
+              <source media="(min-width: 1440px)" srcset="img/promo-desktop.png 1x, img/promo-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/promo-tablet.png 1x, img/promo-tablet@2x.png 2x">
+              <img class="program__img" src="img/promo-mobile.png" srcset="img/promo-mobile@2x.png 2x" alt="Промо изображение">
             </picture>
           </div>
           <div class="program__wrapper program__promo-link">
@@ -78,7 +82,11 @@
           <ul class="program__list">
             <li class="program__item">
               <div class="program__item-card program__item-card--slim">
-                <img class="program__item-img program__item-img--slim" src="img/cat-slim.svg"></img>
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/cat-slim-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/cat-slim-tablet.svg">
+                  <img class="program__item-img program__item-img--slim" src="img/cat-slim-mobile.svg" alt="Похудение">
+                </picture>
                 <h3 class="program__title program__title--slim">Похудение</h3>
                 <p class="program__description program__description--slim">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
                 <a href="catalog.html/#product_3" class="program__catalog program__catalog--pointer">
@@ -88,7 +96,11 @@
             </li>
             <li class="program__item">
               <div class="program__item-card program__item-card--pro">
-                <img class="program__item-img program__item-img--pro" src="img/cat-pro.svg"></img>
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/cat-pro-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/cat-pro-tablet.svg">
+                  <img class="program__item-img program__item-img--pro" src="img/cat-pro-mobile.svg" alt="Набор массы">
+                </picture>
                 <h3 class="program__title program__title--pro">Набор массы</h3>
                 <p class="program__description program__description--pro">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
                 <a href="catalog.html/#product_1" class="program__catalog program__catalog--pointer">
