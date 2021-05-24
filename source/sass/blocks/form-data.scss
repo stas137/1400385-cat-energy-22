@@ -1,6 +1,11 @@
 .form-data {
   @include title(16px);
   line-height: 16px;
+
+  &--decorate {
+    @include line();
+    position: relative;
+  }
 }
 
 .form-data__wrapper {
@@ -200,92 +205,30 @@
 
 .form-data__title {
   position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
   font-size: 24px;
   font-weight: normal;
   line-height: 30px;
+  background-color: #ffffff;
   color: #000000;
   text-transform: initial;
-
-  &--decorate {
-    margin: 0;
-    padding: 0;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      height: 2px;
-      border-bottom: 2px solid $basic-green;
-    }
-
-    &::before {
-      width: 100%;
-      margin-left: calc(-100% - 22px);
-    }
-
-    &::after {
-      width: 150%;
-      margin-left: 22px;
-    }
-
-    @media (min-width: $tablet-width) {
-      &::before {
-        margin-left: calc(-100% - 40px);
-      }
-
-      &::after {
-        margin-left: 40px;
-      }
-    }
-  }
-
-  &--decorate-spec {
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: 30%;
-      height: 2px;
-      border-bottom: 2px solid $basic-green;
-    }
-
-    &::before {
-      width: 100%;
-      margin-left: calc(-100% - 25px);
-    }
-
-    &::after {
-      width: 150%;
-      margin-left: 45px;
-    }
-
-    @media (min-width: $tablet-width) {
-      &::before {
-        margin-left: calc(-100% - 40px);
-      }
-
-      &::after {
-        margin-left: 40px;
-      }
-    }
-  }
+  margin-left: -25px;
+  padding-left: 25px;
+  padding-right: 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 48px;
-
-    &--decorate {
-      &::before,
-      &::after {
-        top: 50%;
-      }
-    }
+    margin-left: -40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
 .form-data__title-wrapper {
-  width: 222px;
+  width: 210px;
 
   @media (min-width: $tablet-width) {
     width: auto;

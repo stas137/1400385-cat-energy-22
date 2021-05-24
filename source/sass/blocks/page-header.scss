@@ -8,6 +8,14 @@
   font-weight: 500;
   line-height: 20px;
   text-transform: uppercase;
+
+  &--form {
+    border-bottom: 1px solid $special-grey;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
+  }
 }
 
 .page-header__wrapper {
